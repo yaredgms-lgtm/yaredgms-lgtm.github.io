@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yared Gebremichael</title>
+<meta name="description" content="Yared Gebremichael Debela, MEAL and ICT4D specialist: monitoring, evaluation, accountability and learning for humanitarian and health programs in Ethiopia, South Sudan, Mozambique, Lebanon and East Africa since 2009.">
+<meta property="og:title" content="Yared Gebremichael · MEAL &amp; ICT4D Specialist">
+<meta property="og:description" content="Monitoring, evaluation, accountability and learning for humanitarian and health programs since 2009.">
+<meta property="og:image" content="photos/experience-01.jpg">
+<link rel="icon" type="image/png" href="photos/logo-icon.png">
+<link rel="apple-touch-icon" href="photos/logo-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a field-report page. Mono metadata (dates, places) in a left rail, reading column on the right, and a filterable photo field log as the signature section. */
+:root{
+  --paper:#f3f4f1; --surface:#ffffff; --ink:#15232b; --muted:#5a6870;
+  --rule:#d8ddda; --accent:#1d5a74; --mark:#a8701c; --accent-soft:#e2edf1;
+  --display:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --body:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --rail:200px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#0f171b; --surface:#152127; --ink:#e6ecee; --muted:#9aabb2;
+    --rule:#26363d; --accent:#7fbfd9; --mark:#e0a54a; --accent-soft:#18303a;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#0f171b; --surface:#152127; --ink:#e6ecee; --muted:#9aabb2;
+  --rule:#26363d; --accent:#7fbfd9; --mark:#e0a54a; --accent-soft:#18303a;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6}
+img{max-width:100%;display:block}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--mark);outline-offset:3px;border-radius:3px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+@media (max-width:420px){.wrap{padding:0 16px}}
+
+header.top{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--paper) 92%,transparent);backdrop-filter:blur(6px);border-bottom:1px solid var(--rule)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--display);font-weight:600;font-size:19px;color:var(--ink);text-decoration:none}
+.brand img{width:30px;height:30px;border-radius:6px;background:#fff}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;flex-wrap:wrap}
+nav a{color:var(--muted);text-decoration:none;font-size:15px}
+nav a:hover{color:var(--ink)}
+@media (max-width:820px){nav{display:none}}
+
+.hero{padding:56px 0 44px}
+.hero .grid{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:center}
+@media (max-width:860px){.hero .grid{grid-template-columns:1fr}}
+.kicker{font-family:var(--mono);font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--mark);margin:0 0 16px}
+.hero h1{font-size:clamp(36px,5.4vw,58px);font-weight:500}
+.hero .lede{font-size:19px;color:var(--muted);max-width:36em;margin:20px 0 28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:6px;font-weight:500;font-size:15px;text-decoration:none;border:1px solid var(--accent)}
+.btn.primary{background:var(--accent);color:var(--paper)}
+.btn.ghost{color:var(--accent)}
+.portrait{margin:0;background:var(--surface);border:1px solid var(--rule);border-radius:10px;overflow:hidden}
+.portrait img{aspect-ratio:1/1;object-fit:cover;width:100%}
+.portrait dl{margin:0;padding:16px 18px;display:grid;grid-template-columns:auto 1fr;gap:6px 14px;font-family:var(--mono);font-size:12.5px}
+.portrait dt{color:var(--mark)}
+.portrait dd{margin:0;color:var(--ink)}
+@media (max-width:860px){.portrait{max-width:420px}}
+
+.stats{border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--surface)}
+.stats ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,1fr)}
+.stats li{padding:22px 20px;border-left:1px solid var(--rule)}
+.stats li:first-child{border-left:0}
+.stats b{display:block;font-family:var(--display);font-size:30px;font-weight:600;font-variant-numeric:tabular-nums}
+.stats span{font-size:14px;color:var(--muted)}
+@media (max-width:760px){.stats ul{grid-template-columns:repeat(2,1fr)}.stats li:nth-child(3){border-left:0}.stats li{border-top:1px solid var(--rule)}.stats li:nth-child(-n+2){border-top:0}}
+
+section.block{padding:64px 0;border-bottom:1px solid var(--rule)}
+.sec-head{display:grid;grid-template-columns:var(--rail) 1fr;gap:32px;margin-bottom:28px}
+.sec-head .label{font-family:var(--mono);font-size:13px;color:var(--mark);text-transform:uppercase;letter-spacing:.06em;padding-top:8px}
+.sec-head h2{font-size:32px}
+.sec-head .sub{color:var(--muted);margin:8px 0 0;max-width:60ch}
+.indent{margin-left:calc(var(--rail) + 32px)}
+@media (max-width:860px){.sec-head{grid-template-columns:1fr;gap:6px}.indent{margin-left:0}}
+
+.about{display:grid;grid-template-columns:1fr 300px;gap:32px;align-items:start}
+.about p{margin:0 0 1em;max-width:65ch}
+.about figure{margin:0}
+.about figure img{border-radius:8px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.about figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:6px}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+@media (max-width:560px){.skills{grid-template-columns:1fr}}
+.skill{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px 20px}
+.skill h3{font-family:var(--body);font-size:16px;font-weight:600;margin-bottom:6px}
+.skill p{margin:0;color:var(--muted);font-size:15px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.tag{font-family:var(--mono);font-size:12.5px;padding:4px 10px;border-radius:99px;background:var(--accent-soft);color:var(--ink)}
+
+.roles{list-style:none;margin:0;padding:0}
+.role{display:grid;grid-template-columns:var(--rail) 1fr;gap:32px;padding:22px 0;border-top:1px solid var(--rule)}
+.role:first-child{border-top:0}
+@media (max-width:860px){.role{grid-template-columns:1fr;gap:6px}}
+.when{font-family:var(--mono);font-size:13.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.when .place{display:block;color:var(--mark)}
+.role-body{display:grid;grid-template-columns:96px 1fr;gap:20px;align-items:start}
+@media (max-width:480px){.role-body{grid-template-columns:64px 1fr;gap:14px}}
+.role-photo{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px}
+.role-photo--blank{background:repeating-linear-gradient(135deg,var(--accent-soft) 0 8px,transparent 8px 16px);border:1px solid var(--rule)}
+.role h3{font-size:21px}
+.role .org{color:var(--accent);font-weight:500;margin:2px 0 8px}
+.role p{margin:0;max-width:65ch}
+.role.current h3::after{content:"Current";font-family:var(--mono);font-size:11px;font-weight:500;vertical-align:middle;margin-left:10px;padding:2px 8px;border-radius:99px;border:1px solid var(--mark);color:var(--mark);white-space:nowrap}
+.earlier{margin-top:8px;padding-top:18px;border-top:1px dashed var(--rule);color:var(--muted);font-size:15px;max-width:70ch}
+
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.filters button{font-family:var(--mono);font-size:13px;padding:6px 12px;border-radius:99px;border:1px solid var(--rule);background:var(--surface);color:var(--ink);cursor:pointer}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.log{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:20px}
+.log li{background:var(--surface);border:1px solid var(--rule);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.log li[hidden]{display:none}
+.shot{all:unset;cursor:zoom-in;display:block}
+.shot img{aspect-ratio:4/3;object-fit:cover;width:100%;transition:transform .3s}
+.shot:hover img{transform:scale(1.03)}
+@media (prefers-reduced-motion: reduce){.shot img{transition:none}.shot:hover img{transform:none}}
+.shot:focus-visible{outline:2px solid var(--mark);outline-offset:-2px}
+.shot-meta{padding:12px 14px 14px;display:flex;flex-direction:column;gap:6px;flex:1}
+.shot-meta .when{font-size:12px}
+.shot-meta .when b{color:var(--ink);font-weight:500}
+.shot-meta p{margin:0;font-size:14.5px;line-height:1.5}
+.shot-meta .org{margin-top:auto;font-size:12.5px;color:var(--accent);font-weight:500}
+.count{font-family:var(--mono);font-size:13px;color:var(--muted);margin:-8px 0 18px}
+
+.lightbox{position:fixed;inset:0;z-index:20;background:rgba(8,14,17,.92);display:none;align-items:center;justify-content:center;padding:24px}
+.lightbox.open{display:flex}
+.lb-inner{max-width:1100px;width:100%;display:grid;grid-template-columns:1fr 300px;gap:24px;align-items:center;color:#e6ecee}
+@media (max-width:860px){.lb-inner{grid-template-columns:1fr}}
+.lb-inner img{max-height:80vh;width:auto;margin:0 auto;border-radius:6px}
+.lb-text .when{color:#e0a54a;font-size:13px}
+.lb-text p{margin:10px 0;font-size:16px}
+.lb-text .org{color:#7fbfd9;font-size:14px}
+.lb-btn{position:absolute;background:rgba(255,255,255,.12);color:#fff;border:0;border-radius:99px;width:44px;height:44px;font-size:22px;cursor:pointer;line-height:44px;text-align:center}
+.lb-btn:hover{background:rgba(255,255,255,.22)}
+.lb-close{top:16px;right:16px}
+.lb-prev{left:16px;top:50%;transform:translateY(-50%)}
+.lb-next{right:16px;top:50%;transform:translateY(-50%)}
+
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:560px){.two{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:20px}
+.card .when{margin-bottom:6px}
+.card h3{font-size:19px;margin-bottom:6px}
+.card p{margin:0;color:var(--muted);font-size:15px}
+.card.award{border-left:3px solid var(--mark)}
+.card.edu{display:grid;grid-template-columns:72px 1fr;gap:16px;align-items:center}
+.card.edu img{border-radius:6px;aspect-ratio:1/1;object-fit:cover}
+
+.contact{display:grid;grid-template-columns:1fr 280px;gap:24px;align-items:start}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.contact-list{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width:640px){.contact-list{grid-template-columns:1fr}}
+.contact-list a{word-break:break-word}
+.contact figure{margin:0}
+.contact figure img{border-radius:8px;aspect-ratio:4/3;object-fit:cover;width:100%}
+.contact figcaption{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:6px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top"><img src="photos/logo-icon.png" alt="">Yared Gebremichael</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#field-log">Field log</a></li>
+        <li><a href="#recognition">Recognition</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap grid">
+      <div>
+        <p class="kicker">International MEAL &amp; ICT4D Specialist</p>
+        <h1>I build monitoring systems that turn field evidence into better humanitarian programs.</h1>
+        <p class="lede">Monitoring, Evaluation, Accountability and Learning professional working on humanitarian and health programs since 2009, from cholera responses in Jonglei to a $100M+ USAID health portfolio in Ethiopia and emergency response in Lebanon today.</p>
+        <div class="actions">
+          <a class="btn primary" href="cv.pdf">Download CV</a>
+          <a class="btn ghost" href="#field-log">See the field log</a>
+        </div>
+      </div>
+      <figure class="portrait">
+        <img src="photos/experience-01.jpg" alt="Portrait of Yared Gebremichael" width="320" height="320">
+        <dl>
+          <dt>Based</dt><dd>Lebanon</dd>
+          <dt>Focus</dt><dd>MEAL, ICT4D, accountability</dd>
+          <dt>Sectors</dt><dd>Health, WASH, nutrition, food security, livelihoods</dd>
+          <dt>Donors</dt><dd>USAID/BHA, USDOS, PEPFAR, Irish Aid, UK Aid, BMZ, GFFO</dd>
+          <dt>Languages</dt><dd>English, Amharic</dd>
+        </dl>
+      </figure>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="wrap">
+      <ul>
+        <li><b>2009</b><span>working in M&amp;E since</span></li>
+        <li><b>$100M+</b><span>USAID health portfolio supported</span></li>
+        <li><b>200+</b><span>M&amp;E professionals trained</span></li>
+        <li><b>6</b><span>countries of field work</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <section class="block" id="about">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">About</span><h2>Evidence people can act on</h2></div>
+      <div class="indent about">
+        <div>
+          <p>I design and run the systems that tell humanitarian teams whether their work is reaching people and making a difference: indicator frameworks, mobile data collection, data quality audits, and community feedback mechanisms that people actually use.</p>
+          <p>My work has taken me from boat-based data quality visits in South Sudan's flood zones to designing Johanniter's first integrated PMEAL framework in Cabo Delgado, leading strategic information for USAID Ethiopia's health office, and now managing M&amp;E for Samaritan's Purse in Lebanon.</p>
+          <p>I hold an MBA in Non-Profit Project Management and a BSc in Information Systems, and I've spent much of my career bringing digital tools (mobile forms, GIS, DHIS2, even drones) into program monitoring.</p>
+        </div>
+        <figure>
+          <img src="photos/banner.jpg" alt="Yared Gebremichael in Berlin" loading="lazy" width="300" height="225">
+          <figcaption>Berlin · 2023</figcaption>
+          <img src="photos/about-01.jpg" alt="Yared Gebremichael at a planning workshop" loading="lazy" width="300" height="225" style="margin-top:16px">
+          <figcaption>Planning workshop</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="expertise">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Expertise</span><h2>What I bring to a program</h2></div>
+      <div class="indent">
+        <div class="skills">
+          <div class="skill"><h3>MEAL system design</h3><p>Results frameworks, indicators, performance monitoring plans, and country-wide PMEAL frameworks aligned to donor requirements.</p></div>
+          <div class="skill"><h3>Accountability &amp; safeguarding</h3><p>Community feedback and response mechanisms, help desks, inclusive focus groups, CHS and GDPR compliance.</p></div>
+          <div class="skill"><h3>Evaluation &amp; assessment</h3><p>Baselines, mid-term and final evaluations, rapid needs assessments, cash and market assessments, post-distribution monitoring.</p></div>
+          <div class="skill"><h3>ICT4D, data &amp; GIS</h3><p>Mobile data collection, GIS and spatial analysis, health information systems, and training field teams to use them.</p></div>
+        </div>
+        <div class="tags" aria-label="Tools">
+          <span class="tag">DHIS2</span><span class="tag">DATIM</span><span class="tag">iFormBuilder</span><span class="tag">CommCare</span><span class="tag">ArcGIS</span><span class="tag">SPSS</span><span class="tag">Tableau</span><span class="tag">SPRS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="experience">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Experience</span><h2>Where I've worked</h2></div>
+      <ol class="roles">
+<li class="role current">
+  <div class="when">Jul 2026 – Present<span class="place">Lebanon</span></div>
+  <div class="role-body"><div class="role-photo role-photo--blank" aria-hidden="true"></div><div><h3>Country M&amp;E Manager</h3><div class="org">Samaritan&#x27;s Purse, Middle East Programs</div><p>Runs the MEAL system for Middle East programs, including the USDOS-funded Lebanon Emergency Response Program: reporting platforms, staff training, needs assessments, spot checks and donor reporting.</p></div></div>
+</li>
+<li class="role">
+  <div class="when">Nov 2025 – Jun 2026<span class="place">Global role</span></div>
+  <div class="role-body"><div class="role-photo role-photo--blank" aria-hidden="true"></div><div><h3>Global Capacity Building &amp; MEAL Officer, SCORE Program</h3><div class="org">HelpAge International</div><p>Harmonized global MEAL frameworks and digital tools across country offices, built CHS- and GDPR-aligned accountability and safeguarding procedures, and trained staff and partners in PMEAL.</p></div></div>
+</li>
+<li class="role">
+  <div class="when">Apr 2024 – Aug 2025<span class="place">Addis Ababa, Ethiopia</span></div>
+  <div class="role-body"><img class="role-photo" src="photos/thumbs/work-timeline-2023-2025-03.jpg" alt="Strategic Information Cluster Lead at USAID Ethiopia, Health Office" loading="lazy" width="96" height="96"><div><h3>Strategic Information Cluster Lead</h3><div class="org">USAID Ethiopia, Health Office</div><p>Led national M&amp;E strategy, strengthened data systems and oversaw quality reporting for a health portfolio of more than $100M.</p></div></div>
+</li>
+<li class="role">
+  <div class="when">Mar 2023 – Apr 2024<span class="place">Pemba, Mozambique</span></div>
+  <div class="role-body"><img class="role-photo" src="photos/thumbs/experience-02.jpg" alt="Head of PMEAL at Johanniter International Assistance" loading="lazy" width="96" height="96"><div><h3>Head of PMEAL</h3><div class="org">Johanniter International Assistance</div><p>Designed and rolled out the country&#x27;s first integrated PMEAL framework across WASH, nutrition and food security, aligned with USAID, BMZ and GFFO requirements.</p></div></div>
+</li>
+<li class="role">
+  <div class="when">Mar 2021 – Feb 2023<span class="place">Juba, South Sudan</span></div>
+  <div class="role-body"><img class="role-photo" src="photos/thumbs/experience-03.jpg" alt="MEAL Training Coordinator at Samaritan&#x27;s Purse" loading="lazy" width="96" height="96"><div><h3>MEAL Training Coordinator</h3><div class="org">Samaritan&#x27;s Purse</div><p>Trained field teams in mobile data collection, led baseline and rapid needs assessments, and managed the Samaritan&#x27;s Purse Reporting System for USAID/BHA-funded emergency responses.</p></div></div>
+</li>
+<li class="role">
+  <div class="when">May 2019 – Feb 2021<span class="place">Addis Ababa, Ethiopia</span></div>
+  <div class="role-body"><img class="role-photo" src="photos/thumbs/experience-05.jpg" alt="Country MEL Advisor at Trócaire–CAFOD–SCIAF" loading="lazy" width="96" height="96"><div><h3>Country MEL Advisor</h3><div class="org">Trócaire–CAFOD–SCIAF</div><p>Developed adaptive MEL tools, including cash and market assessments and post-distribution monitoring, for humanitarian response funded by Irish Aid and UK Aid.</p></div></div>
+</li>
+<li class="role">
+  <div class="when">Nov 2017 – Feb 2019<span class="place">Juba, South Sudan</span></div>
+  <div class="role-body"><img class="role-photo" src="photos/thumbs/experience-04.jpg" alt="MEAL Manager at Catholic Relief Services" loading="lazy" width="96" height="96"><div><h3>MEAL Manager</h3><div class="org">Catholic Relief Services</div><p>Built an agile MEAL system for a $5M USAID cholera emergency response reaching over 100,000 people in four states; supervised 28 staff and launched a Community Help Desk.</p></div></div>
+</li>
+<li class="role">
+  <div class="when">2011 – 2017<span class="place">Addis Ababa, Ethiopia</span></div>
+  <div class="role-body"><img class="role-photo" src="photos/thumbs/work-timeline-2011-2017-02.jpg" alt="Country M&amp;E Manager, ICT4D at Catholic Relief Services, Ethiopia" loading="lazy" width="96" height="96"><div><h3>Country M&amp;E Manager, ICT4D</h3><div class="org">Catholic Relief Services, Ethiopia</div><p>Led the rollout of a humanitarian information system and CRS Ethiopia&#x27;s digital data work (mobile data collection, GIS and drones), and supported M&amp;E for watershed and coffee livelihoods projects across Ethiopia, Rwanda and Kenya.</p></div></div>
+</li>
+<li class="role">
+  <div class="when">Jun 2009 – Jul 2011<span class="place">Addis Ababa + 6 field sites</span></div>
+  <div class="role-body"><img class="role-photo" src="photos/thumbs/experience-06.jpg" alt="M&amp;E Coordinator at Salesian Missions" loading="lazy" width="96" height="96"><div><h3>M&amp;E Coordinator</h3><div class="org">Salesian Missions</div><p>Led the performance monitoring plan for the $10M USAID/PEPFAR “CARING for our Youth” project, built a centralized OVC database, and ran data quality audits in seven urban centers.</p></div></div>
+</li>
+      </ol>
+      <p class="earlier indent">Before 2009: Program Officer with Beza Lehiwot Ethiopia (2006–2009), linking orphans and vulnerable children to services on USAID- and FHI360-funded projects, and Community Nurse with the Ministry of Health (2001–2006).</p>
+    </div>
+  </section>
+
+  <section class="block" id="field-log">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Field log</span><div><h2>Photos from the field, 2012–2025</h2><p class="sub">Select a photo to enlarge it. Filter by country to see the work in one place.</p></div></div>
+      <div class="filters" role="group" aria-label="Filter photos by country">
+<button type="button" data-f="all" aria-pressed="true">All</button>
+<button type="button" data-f="ET" aria-pressed="false">Ethiopia</button>
+<button type="button" data-f="SS" aria-pressed="false">South Sudan</button>
+<button type="button" data-f="MZ" aria-pressed="false">Mozambique</button>
+<button type="button" data-f="KE RW" aria-pressed="false">Kenya &amp; Rwanda</button>
+<button type="button" data-f="INT" aria-pressed="false">Global events</button>
+      </div>
+      <p class="count" id="count" aria-live="polite">Showing 35 photos</p>
+      <ul class="log" id="log">
+<li data-c="ET">
+  <button type="button" class="shot" data-i="0" aria-label="Enlarge photo: May 2025, US Embassy, Addis Ababa">
+    <img src="photos/thumbs/work-timeline-2023-2025-01.jpg" alt="Honored at the Annual USG Honor Awards Ceremony by U.S. Ambassador Ervin Massinga for strengthening the data systems behind Ethiopia&#x27;s health programs." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>May 2025</b> · US Embassy, Addis Ababa</span><p>Honored at the Annual USG Honor Awards Ceremony by U.S. Ambassador Ervin Massinga for strengthening the data systems behind Ethiopia&#x27;s health programs.</p><span class="org">USAID Ethiopia</span></div>
+</li>
+<li data-c="ET">
+  <button type="button" class="shot" data-i="1" aria-label="Enlarge photo: Jan 2025, US Embassy, Addis Ababa">
+    <img src="photos/thumbs/work-timeline-2023-2025-02.jpg" alt="Recognized at the Health Office&#x27;s all-staff recognition ceremony for data quality, strategic reporting and evidence-based decision-making." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Jan 2025</b> · US Embassy, Addis Ababa</span><p>Recognized at the Health Office&#x27;s all-staff recognition ceremony for data quality, strategic reporting and evidence-based decision-making.</p><span class="org">USAID Ethiopia</span></div>
+</li>
+<li data-c="ET">
+  <button type="button" class="shot" data-i="2" aria-label="Enlarge photo: Aug 2024, ILRI campus, Addis Ababa">
+    <img src="photos/thumbs/work-timeline-2023-2025-04.jpg" alt="With the USAID Ethiopia Health Office team after the annual retreat on strategic learning and adaptive management." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Aug 2024</b> · ILRI campus, Addis Ababa</span><p>With the USAID Ethiopia Health Office team after the annual retreat on strategic learning and adaptive management.</p><span class="org">USAID Ethiopia</span></div>
+</li>
+<li data-c="ET">
+  <button type="button" class="shot" data-i="3" aria-label="Enlarge photo: Jul 2024, ILRI campus, Addis Ababa">
+    <img src="photos/thumbs/work-timeline-2023-2025-03.jpg" alt="Facilitating a group exercise at the Health Office annual retreat and replanning workshop." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Jul 2024</b> · ILRI campus, Addis Ababa</span><p>Facilitating a group exercise at the Health Office annual retreat and replanning workshop.</p><span class="org">USAID Ethiopia</span></div>
+</li>
+<li data-c="MZ">
+  <button type="button" class="shot" data-i="4" aria-label="Enlarge photo: Oct 2023, Montepuez, Cabo Delgado">
+    <img src="photos/thumbs/work-timeline-2023-2025-09.jpg" alt="Facilitating a male-focused accountability focus group to make community feedback mechanisms more inclusive." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Oct 2023</b> · Montepuez, Cabo Delgado</span><p>Facilitating a male-focused accountability focus group to make community feedback mechanisms more inclusive.</p><span class="org">Johanniter</span></div>
+</li>
+<li data-c="MZ">
+  <button type="button" class="shot" data-i="5" aria-label="Enlarge photo: Sep 2023, Pemba, Mozambique">
+    <img src="photos/thumbs/work-timeline-2023-2025-05.jpg" alt="Presenting on accountability and learning in the Cabo Delgado response at the annual replanning event." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Sep 2023</b> · Pemba, Mozambique</span><p>Presenting on accountability and learning in the Cabo Delgado response at the annual replanning event.</p><span class="org">Johanniter</span></div>
+</li>
+<li data-c="MZ">
+  <button type="button" class="shot" data-i="6" aria-label="Enlarge photo: Aug 2023, Arimba, Cabo Delgado">
+    <img src="photos/thumbs/work-timeline-2023-2025-06.jpg" alt="Setting up community feedback and response mechanisms for people affected by conflict and displacement." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Aug 2023</b> · Arimba, Cabo Delgado</span><p>Setting up community feedback and response mechanisms for people affected by conflict and displacement.</p><span class="org">Johanniter</span></div>
+</li>
+<li data-c="INT">
+  <button type="button" class="shot" data-i="7" aria-label="Enlarge photo: Jun 2023, Berlin, Germany">
+    <img src="photos/thumbs/work-timeline-2023-2025-07.jpg" alt="Co-designing Johanniter&#x27;s global PMEAL manual with international experts to standardize tools and frameworks." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Jun 2023</b> · Berlin, Germany</span><p>Co-designing Johanniter&#x27;s global PMEAL manual with international experts to standardize tools and frameworks.</p><span class="org">Johanniter HQ</span></div>
+</li>
+<li data-c="INT">
+  <button type="button" class="shot" data-i="8" aria-label="Enlarge photo: Mar 2023, Berlin, Germany">
+    <img src="photos/thumbs/work-timeline-2023-2025-08.jpg" alt="Global onboarding meeting with leadership on strategic priorities and PMEAL integration." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Mar 2023</b> · Berlin, Germany</span><p>Global onboarding meeting with leadership on strategic priorities and PMEAL integration.</p><span class="org">Johanniter HQ</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="9" aria-label="Enlarge photo: Nov 2022, Maiwut, South Sudan">
+    <img src="photos/thumbs/work-timeline-2018-2022-04.jpg" alt="Travelling by road to remote villages for MEAL field visits, verifying reach and mentoring staff on data quality and beneficiary feedback." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Nov 2022</b> · Maiwut, South Sudan</span><p>Travelling by road to remote villages for MEAL field visits, verifying reach and mentoring staff on data quality and beneficiary feedback.</p><span class="org">Samaritan&#x27;s Purse</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="10" aria-label="Enlarge photo: Oct 2022, Adjuong Thok, Unity State">
+    <img src="photos/thumbs/work-timeline-2018-2022-01.jpg" alt="Leading a multi-sector rapid needs assessment with local enumerators to target WFP emergency food distribution." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Oct 2022</b> · Adjuong Thok, Unity State</span><p>Leading a multi-sector rapid needs assessment with local enumerators to target WFP emergency food distribution.</p><span class="org">Samaritan&#x27;s Purse</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="11" aria-label="Enlarge photo: Oct 2022, Kigille, Maiwut County">
+    <img src="photos/thumbs/work-timeline-2018-2022-03.jpg" alt="Community-led focus group with beekeeping groups to assess the sustainability of a livelihoods program." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Oct 2022</b> · Kigille, Maiwut County</span><p>Community-led focus group with beekeeping groups to assess the sustainability of a livelihoods program.</p><span class="org">Samaritan&#x27;s Purse</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="12" aria-label="Enlarge photo: Sep 2021, Abiemnom, Unity State">
+    <img src="photos/thumbs/work-timeline-2018-2022-02.jpg" alt="Field monitoring of BHA-funded WASH, nutrition and livelihoods programs with M&amp;E officers from Agok and Abyei." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Sep 2021</b> · Abiemnom, Unity State</span><p>Field monitoring of BHA-funded WASH, nutrition and livelihoods programs with M&amp;E officers from Agok and Abyei.</p><span class="org">Samaritan&#x27;s Purse</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="13" aria-label="Enlarge photo: Oct 2018, Jeich, Ayod County, Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-06.jpg" alt="Assessing water point functionality to find broken boreholes and guide repairs." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Oct 2018</b> · Jeich, Ayod County, Jonglei</span><p>Assessing water point functionality to find broken boreholes and guide repairs.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="14" aria-label="Enlarge photo: Sep 2018, Jeich, Ayod County, Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-05.jpg" alt="Hands-on training for M&amp;E officers on data collection, indicator tracking and reporting for the $5M cholera response." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Sep 2018</b> · Jeich, Ayod County, Jonglei</span><p>Hands-on training for M&amp;E officers on data collection, indicator tracking and reporting for the $5M cholera response.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="15" aria-label="Enlarge photo: Apr 2018, Bor to Minkamman, by boat">
+    <img src="photos/thumbs/work-timeline-2018-2022-07.jpg" alt="Quarterly data quality assurance visit, validating cholera prevention data and reporting workflows." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2018</b> · Bor to Minkamman, by boat</span><p>Quarterly data quality assurance visit, validating cholera prevention data and reporting workflows.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="16" aria-label="Enlarge photo: Apr 2018, Mabior (Panyagor), Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-08.jpg" alt="Monitoring hygiene promotion and checking that community health workers deliver key water, sanitation and handwashing messages." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2018</b> · Mabior (Panyagor), Jonglei</span><p>Monitoring hygiene promotion and checking that community health workers deliver key water, sanitation and handwashing messages.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="17" aria-label="Enlarge photo: Apr 2018, Duk Poktap, Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-09.jpg" alt="Evaluating cholera prevention in a flood-prone area: water treatment, latrine use and early warning." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2018</b> · Duk Poktap, Jonglei</span><p>Evaluating cholera prevention in a flood-prone area: water treatment, latrine use and early warning.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="18" aria-label="Enlarge photo: Apr 2018, Duk Padiet, Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-10.jpg" alt="Strengthening feedback loops between communities and program teams to shape the cholera response." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2018</b> · Duk Padiet, Jonglei</span><p>Strengthening feedback loops between communities and program teams to shape the cholera response.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="19" aria-label="Enlarge photo: Apr 2018, Mabior cattle camps, Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-11.jpg" alt="Assessing cholera risk among mobile pastoralist communities and tailoring hygiene kits and messages." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2018</b> · Mabior cattle camps, Jonglei</span><p>Assessing cholera risk among mobile pastoralist communities and tailoring hygiene kits and messages.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="20" aria-label="Enlarge photo: Apr 2018, Mabior cattle camps, Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-12.jpg" alt="Engaging community members in mobile cattle camps on cholera prevention." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2018</b> · Mabior cattle camps, Jonglei</span><p>Engaging community members in mobile cattle camps on cholera prevention.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="21" aria-label="Enlarge photo: Apr 2018, Mabior (Panyagor), Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-13.jpg" alt="On-site M&amp;E capacity-building session with Deng Mamor Adoor, M&amp;E Assistant at the CRS base." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2018</b> · Mabior (Panyagor), Jonglei</span><p>On-site M&amp;E capacity-building session with Deng Mamor Adoor, M&amp;E Assistant at the CRS base.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="22" aria-label="Enlarge photo: Apr 2018, Mabior (Panyagor), Jonglei">
+    <img src="photos/thumbs/work-timeline-2018-2022-14.jpg" alt="Running a remote M&amp;E training for CRS Juba staff from a field tent." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2018</b> · Mabior (Panyagor), Jonglei</span><p>Running a remote M&amp;E training for CRS Juba staff from a field tent.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="INT">
+  <button type="button" class="shot" data-i="23" aria-label="Enlarge photo: May 2017, Hyderabad, India">
+    <img src="photos/thumbs/work-timeline-2011-2017-11.jpg" alt="On the way to the annual ICT4D Conference to share CRS digital monitoring innovations with global practitioners." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>May 2017</b> · Hyderabad, India</span><p>On the way to the annual ICT4D Conference to share CRS digital monitoring innovations with global practitioners.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="KE">
+  <button type="button" class="shot" data-i="24" aria-label="Enlarge photo: Nov 2016, Kisumu, Kenya">
+    <img src="photos/thumbs/work-timeline-2011-2017-08.jpg" alt="ESRI GIS training to build CRS mapping and spatial analysis capacity." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Nov 2016</b> · Kisumu, Kenya</span><p>ESRI GIS training to build CRS mapping and spatial analysis capacity.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="ET">
+  <button type="button" class="shot" data-i="25" aria-label="Enlarge photo: Aug 2016, Addis Ababa">
+    <img src="photos/thumbs/work-timeline-2011-2017-01.jpg" alt="3rd Ethiopian Evaluation Association Summit: national evaluation agendas and evaluative thinking." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Aug 2016</b> · Addis Ababa</span><p>3rd Ethiopian Evaluation Association Summit: national evaluation agendas and evaluative thinking.</p><span class="org">Ethiopian Evaluation Association</span></div>
+</li>
+<li data-c="ET">
+  <button type="button" class="shot" data-i="26" aria-label="Enlarge photo: Jul 2016, CRS office, Addis Ababa">
+    <img src="photos/thumbs/work-timeline-2011-2017-02.jpg" alt="Leading a discussion on mobile apps for evaluations and digital data collection." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Jul 2016</b> · CRS office, Addis Ababa</span><p>Leading a discussion on mobile apps for evaluations and digital data collection.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="KE">
+  <button type="button" class="shot" data-i="27" aria-label="Enlarge photo: Jun 2016, Nairobi, Kenya">
+    <img src="photos/thumbs/work-timeline-2011-2017-03.jpg" alt="Presenting CRS Ethiopia&#x27;s work with monitoring drones at the annual ICT4D Conference." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Jun 2016</b> · Nairobi, Kenya</span><p>Presenting CRS Ethiopia&#x27;s work with monitoring drones at the annual ICT4D Conference.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="KE">
+  <button type="button" class="shot" data-i="28" aria-label="Enlarge photo: Jun 2016, Kibera, Nairobi">
+    <img src="photos/thumbs/work-timeline-2011-2017-10.jpg" alt="Observing ICT4D-supported primary education in a low-resource urban setting." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Jun 2016</b> · Kibera, Nairobi</span><p>Observing ICT4D-supported primary education in a low-resource urban setting.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="RW">
+  <button type="button" class="shot" data-i="29" aria-label="Enlarge photo: Jun 2014, Butare, Rwanda">
+    <img src="photos/thumbs/work-timeline-2011-2017-04.jpg" alt="First-year review of a coffee livelihoods project: farmer income and cooperative sustainability." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Jun 2014</b> · Butare, Rwanda</span><p>First-year review of a coffee livelihoods project: farmer income and cooperative sustainability.</p><span class="org">CRS · Green Mountain Coffee</span></div>
+</li>
+<li data-c="SS">
+  <button type="button" class="shot" data-i="30" aria-label="Enlarge photo: Nov 2013, Bor, South Sudan">
+    <img src="photos/thumbs/work-timeline-2011-2017-05.jpg" alt="ICT4D and GIS training for CRS South Sudan MEAL staff." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Nov 2013</b> · Bor, South Sudan</span><p>ICT4D and GIS training for CRS South Sudan MEAL staff.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="ET">
+  <button type="button" class="shot" data-i="31" aria-label="Enlarge photo: Jun 2013, Hawassa, Ethiopia">
+    <img src="photos/thumbs/work-timeline-2011-2017-06.jpg" alt="Second-year review of the coffee livelihoods project, with teams from Rwanda, Kenya and Ethiopia." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Jun 2013</b> · Hawassa, Ethiopia</span><p>Second-year review of the coffee livelihoods project, with teams from Rwanda, Kenya and Ethiopia.</p><span class="org">CRS · Green Mountain Coffee</span></div>
+</li>
+<li data-c="INT">
+  <button type="button" class="shot" data-i="32" aria-label="Enlarge photo: Mar 2013, Accra, Ghana">
+    <img src="photos/thumbs/work-timeline-2011-2017-07.jpg" alt="Visiting hospitals that use CRS-developed digital health applications." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Mar 2013</b> · Accra, Ghana</span><p>Visiting hospitals that use CRS-developed digital health applications.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="ET">
+  <button type="button" class="shot" data-i="33" aria-label="Enlarge photo: Apr 2012, Kelela, North Wollo">
+    <img src="photos/thumbs/work-timeline-2011-2017-09.jpg" alt="M&amp;E support for an integrated watershed management project." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2012</b> · Kelela, North Wollo</span><p>M&amp;E support for an integrated watershed management project.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+<li data-c="RW">
+  <button type="button" class="shot" data-i="34" aria-label="Enlarge photo: Apr 2012, Kigali, Rwanda">
+    <img src="photos/thumbs/work-timeline-2011-2017-12.jpg" alt="Piloting iFormBuilder for digital data collection and analysis." loading="lazy" width="400" height="400">
+  </button>
+  <div class="shot-meta"><span class="when"><b>Apr 2012</b> · Kigali, Rwanda</span><p>Piloting iFormBuilder for digital data collection and analysis.</p><span class="org">Catholic Relief Services</span></div>
+</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block" id="recognition">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Recognition &amp; education</span><h2>Awards, results and qualifications</h2></div>
+      <div class="indent two">
+        <div class="card award"><div class="when">May 2025</div><h3>USG Honor Award</h3><p>Presented by U.S. Ambassador Ervin Massinga for strengthening the data systems behind Ethiopia's health programs.</p></div>
+        <div class="card award"><div class="when">Jan 2025</div><h3>USAID Health Office recognition</h3><p>For data quality, strategic reporting and evidence-based decision-making.</p></div>
+        <div class="card award"><div class="when">USAID Ethiopia</div><h3>National M&amp;E strategy</h3><p>Led development of the national M&amp;E strategy, strengthening data quality and program effectiveness.</p></div>
+        <div class="card award"><div class="when">GIS tracking system</div><h3>40% fewer data discrepancies</h3><p>Designed a GIS-based tracking system for health interventions.</p></div>
+        <div class="card edu"><img src="photos/thumbs/home-01.jpg" alt="Yared Gebremichael at graduation" loading="lazy" width="72" height="72"><div><div class="when">Sikkim Manipal University</div><h3>MBA, Non-Profit Project Management</h3></div></div>
+        <div class="card edu"><img src="photos/thumbs/home-02.jpg" alt="Yared Gebremichael" loading="lazy" width="72" height="72"><div><div class="when">Addis Ababa University</div><h3>BSc, Information Systems</h3></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="contact">
+    <div class="wrap">
+      <div class="sec-head"><span class="label">Contact</span><h2>Let's talk about your program</h2></div>
+      <div class="indent contact">
+        <div>
+          <div class="contact-list">
+            <div class="card"><div class="when">Email</div><p><a href="mailto:yaredgms@gmail.com">yaredgms@gmail.com</a></p></div>
+            <div class="card"><div class="when">LinkedIn</div><p><a href="https://www.linkedin.com/in/yared-gebremichael-debela">yared-gebremichael-debela</a></p></div>
+            <div class="card"><div class="when">MS Teams</div><p>yaredgebremichael</p></div>
+          </div>
+          <p style="margin-top:20px"><a class="btn primary" href="cv.pdf">Download CV (PDF)</a></p>
+        </div>
+        <figure>
+          <img src="photos/home-03.jpg" alt="Yared Gebremichael beside a UN Humanitarian Air Service helicopter" loading="lazy" width="280" height="210">
+          <figcaption>Heading to the field, South Sudan</figcaption>
+          <img src="photos/contact-01.jpg" alt="Yared Gebremichael on a field visit" loading="lazy" width="280" height="210" style="margin-top:16px">
+          <figcaption>On a field visit</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Yared Gebremichael Debela</span><span>International MEAL Specialist</span></div></footer>
+
+<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button type="button" class="lb-btn lb-close" id="lb-close" aria-label="Close photo">×</button>
+  <button type="button" class="lb-btn lb-prev" id="lb-prev" aria-label="Previous photo">‹</button>
+  <button type="button" class="lb-btn lb-next" id="lb-next" aria-label="Next photo">›</button>
+  <div class="lb-inner">
+    <img id="lb-img" src="" alt="">
+    <div class="lb-text"><div class="when" id="lb-when"></div><p id="lb-cap"></p><div class="org" id="lb-org"></div></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var DATA = [{"src": "photos/work-timeline-2023-2025-01.jpg", "date": "May 2025", "place": "US Embassy, Addis Ababa", "org": "USAID Ethiopia", "cap": "Honored at the Annual USG Honor Awards Ceremony by U.S. Ambassador Ervin Massinga for strengthening the data systems behind Ethiopia's health programs."}, {"src": "photos/work-timeline-2023-2025-02.jpg", "date": "Jan 2025", "place": "US Embassy, Addis Ababa", "org": "USAID Ethiopia", "cap": "Recognized at the Health Office's all-staff recognition ceremony for data quality, strategic reporting and evidence-based decision-making."}, {"src": "photos/work-timeline-2023-2025-04.jpg", "date": "Aug 2024", "place": "ILRI campus, Addis Ababa", "org": "USAID Ethiopia", "cap": "With the USAID Ethiopia Health Office team after the annual retreat on strategic learning and adaptive management."}, {"src": "photos/work-timeline-2023-2025-03.jpg", "date": "Jul 2024", "place": "ILRI campus, Addis Ababa", "org": "USAID Ethiopia", "cap": "Facilitating a group exercise at the Health Office annual retreat and replanning workshop."}, {"src": "photos/work-timeline-2023-2025-09.jpg", "date": "Oct 2023", "place": "Montepuez, Cabo Delgado", "org": "Johanniter", "cap": "Facilitating a male-focused accountability focus group to make community feedback mechanisms more inclusive."}, {"src": "photos/work-timeline-2023-2025-05.jpg", "date": "Sep 2023", "place": "Pemba, Mozambique", "org": "Johanniter", "cap": "Presenting on accountability and learning in the Cabo Delgado response at the annual replanning event."}, {"src": "photos/work-timeline-2023-2025-06.jpg", "date": "Aug 2023", "place": "Arimba, Cabo Delgado", "org": "Johanniter", "cap": "Setting up community feedback and response mechanisms for people affected by conflict and displacement."}, {"src": "photos/work-timeline-2023-2025-07.jpg", "date": "Jun 2023", "place": "Berlin, Germany", "org": "Johanniter HQ", "cap": "Co-designing Johanniter's global PMEAL manual with international experts to standardize tools and frameworks."}, {"src": "photos/work-timeline-2023-2025-08.jpg", "date": "Mar 2023", "place": "Berlin, Germany", "org": "Johanniter HQ", "cap": "Global onboarding meeting with leadership on strategic priorities and PMEAL integration."}, {"src": "photos/work-timeline-2018-2022-04.jpg", "date": "Nov 2022", "place": "Maiwut, South Sudan", "org": "Samaritan's Purse", "cap": "Travelling by road to remote villages for MEAL field visits, verifying reach and mentoring staff on data quality and beneficiary feedback."}, {"src": "photos/work-timeline-2018-2022-01.jpg", "date": "Oct 2022", "place": "Adjuong Thok, Unity State", "org": "Samaritan's Purse", "cap": "Leading a multi-sector rapid needs assessment with local enumerators to target WFP emergency food distribution."}, {"src": "photos/work-timeline-2018-2022-03.jpg", "date": "Oct 2022", "place": "Kigille, Maiwut County", "org": "Samaritan's Purse", "cap": "Community-led focus group with beekeeping groups to assess the sustainability of a livelihoods program."}, {"src": "photos/work-timeline-2018-2022-02.jpg", "date": "Sep 2021", "place": "Abiemnom, Unity State", "org": "Samaritan's Purse", "cap": "Field monitoring of BHA-funded WASH, nutrition and livelihoods programs with M&E officers from Agok and Abyei."}, {"src": "photos/work-timeline-2018-2022-06.jpg", "date": "Oct 2018", "place": "Jeich, Ayod County, Jonglei", "org": "Catholic Relief Services", "cap": "Assessing water point functionality to find broken boreholes and guide repairs."}, {"src": "photos/work-timeline-2018-2022-05.jpg", "date": "Sep 2018", "place": "Jeich, Ayod County, Jonglei", "org": "Catholic Relief Services", "cap": "Hands-on training for M&E officers on data collection, indicator tracking and reporting for the $5M cholera response."}, {"src": "photos/work-timeline-2018-2022-07.jpg", "date": "Apr 2018", "place": "Bor to Minkamman, by boat", "org": "Catholic Relief Services", "cap": "Quarterly data quality assurance visit, validating cholera prevention data and reporting workflows."}, {"src": "photos/work-timeline-2018-2022-08.jpg", "date": "Apr 2018", "place": "Mabior (Panyagor), Jonglei", "org": "Catholic Relief Services", "cap": "Monitoring hygiene promotion and checking that community health workers deliver key water, sanitation and handwashing messages."}, {"src": "photos/work-timeline-2018-2022-09.jpg", "date": "Apr 2018", "place": "Duk Poktap, Jonglei", "org": "Catholic Relief Services", "cap": "Evaluating cholera prevention in a flood-prone area: water treatment, latrine use and early warning."}, {"src": "photos/work-timeline-2018-2022-10.jpg", "date": "Apr 2018", "place": "Duk Padiet, Jonglei", "org": "Catholic Relief Services", "cap": "Strengthening feedback loops between communities and program teams to shape the cholera response."}, {"src": "photos/work-timeline-2018-2022-11.jpg", "date": "Apr 2018", "place": "Mabior cattle camps, Jonglei", "org": "Catholic Relief Services", "cap": "Assessing cholera risk among mobile pastoralist communities and tailoring hygiene kits and messages."}, {"src": "photos/work-timeline-2018-2022-12.jpg", "date": "Apr 2018", "place": "Mabior cattle camps, Jonglei", "org": "Catholic Relief Services", "cap": "Engaging community members in mobile cattle camps on cholera prevention."}, {"src": "photos/work-timeline-2018-2022-13.jpg", "date": "Apr 2018", "place": "Mabior (Panyagor), Jonglei", "org": "Catholic Relief Services", "cap": "On-site M&E capacity-building session with Deng Mamor Adoor, M&E Assistant at the CRS base."}, {"src": "photos/work-timeline-2018-2022-14.jpg", "date": "Apr 2018", "place": "Mabior (Panyagor), Jonglei", "org": "Catholic Relief Services", "cap": "Running a remote M&E training for CRS Juba staff from a field tent."}, {"src": "photos/work-timeline-2011-2017-11.jpg", "date": "May 2017", "place": "Hyderabad, India", "org": "Catholic Relief Services", "cap": "On the way to the annual ICT4D Conference to share CRS digital monitoring innovations with global practitioners."}, {"src": "photos/work-timeline-2011-2017-08.jpg", "date": "Nov 2016", "place": "Kisumu, Kenya", "org": "Catholic Relief Services", "cap": "ESRI GIS training to build CRS mapping and spatial analysis capacity."}, {"src": "photos/work-timeline-2011-2017-01.jpg", "date": "Aug 2016", "place": "Addis Ababa", "org": "Ethiopian Evaluation Association", "cap": "3rd Ethiopian Evaluation Association Summit: national evaluation agendas and evaluative thinking."}, {"src": "photos/work-timeline-2011-2017-02.jpg", "date": "Jul 2016", "place": "CRS office, Addis Ababa", "org": "Catholic Relief Services", "cap": "Leading a discussion on mobile apps for evaluations and digital data collection."}, {"src": "photos/work-timeline-2011-2017-03.jpg", "date": "Jun 2016", "place": "Nairobi, Kenya", "org": "Catholic Relief Services", "cap": "Presenting CRS Ethiopia's work with monitoring drones at the annual ICT4D Conference."}, {"src": "photos/work-timeline-2011-2017-10.jpg", "date": "Jun 2016", "place": "Kibera, Nairobi", "org": "Catholic Relief Services", "cap": "Observing ICT4D-supported primary education in a low-resource urban setting."}, {"src": "photos/work-timeline-2011-2017-04.jpg", "date": "Jun 2014", "place": "Butare, Rwanda", "org": "CRS · Green Mountain Coffee", "cap": "First-year review of a coffee livelihoods project: farmer income and cooperative sustainability."}, {"src": "photos/work-timeline-2011-2017-05.jpg", "date": "Nov 2013", "place": "Bor, South Sudan", "org": "Catholic Relief Services", "cap": "ICT4D and GIS training for CRS South Sudan MEAL staff."}, {"src": "photos/work-timeline-2011-2017-06.jpg", "date": "Jun 2013", "place": "Hawassa, Ethiopia", "org": "CRS · Green Mountain Coffee", "cap": "Second-year review of the coffee livelihoods project, with teams from Rwanda, Kenya and Ethiopia."}, {"src": "photos/work-timeline-2011-2017-07.jpg", "date": "Mar 2013", "place": "Accra, Ghana", "org": "Catholic Relief Services", "cap": "Visiting hospitals that use CRS-developed digital health applications."}, {"src": "photos/work-timeline-2011-2017-09.jpg", "date": "Apr 2012", "place": "Kelela, North Wollo", "org": "Catholic Relief Services", "cap": "M&E support for an integrated watershed management project."}, {"src": "photos/work-timeline-2011-2017-12.jpg", "date": "Apr 2012", "place": "Kigali, Rwanda", "org": "Catholic Relief Services", "cap": "Piloting iFormBuilder for digital data collection and analysis."}];
+  var btns = document.querySelectorAll('.filters button');
+  var items = document.querySelectorAll('#log li');
+  var count = document.getElementById('count');
+  btns.forEach(function(b){
+    b.addEventListener('click', function(){
+      var f = b.getAttribute('data-f').split(' ');
+      var n = 0;
+      btns.forEach(function(x){ x.setAttribute('aria-pressed', x===b ? 'true' : 'false'); });
+      items.forEach(function(li){
+        var show = f[0]==='all' || f.indexOf(li.getAttribute('data-c')) > -1;
+        li.hidden = !show; if (show) n++;
+      });
+      count.textContent = 'Showing ' + n + ' photo' + (n===1?'':'s');
+    });
+  });
+
+  var lb = document.getElementById('lb'), img = document.getElementById('lb-img');
+  var cur = 0, lastFocus = null;
+  function visible(){ return Array.prototype.filter.call(items, function(li){ return !li.hidden; }).map(function(li){ return +li.querySelector('.shot').dataset.i; }); }
+  function show(i){
+    var d = DATA[i]; cur = i;
+    img.src = d.src; img.alt = d.cap;
+    document.getElementById('lb-when').textContent = d.date + ' · ' + d.place;
+    document.getElementById('lb-cap').textContent = d.cap;
+    document.getElementById('lb-org').textContent = d.org;
+  }
+  function open(i){ lastFocus = document.activeElement; show(i); lb.classList.add('open'); document.getElementById('lb-close').focus(); }
+  function close(){ lb.classList.remove('open'); img.src=''; if (lastFocus) lastFocus.focus(); }
+  function step(dir){ var v = visible(); var k = v.indexOf(cur); show(v[(k + dir + v.length) % v.length]); }
+  document.querySelectorAll('.shot').forEach(function(s){ s.addEventListener('click', function(){ open(+s.dataset.i); }); });
+  document.getElementById('lb-close').addEventListener('click', close);
+  document.getElementById('lb-prev').addEventListener('click', function(){ step(-1); });
+  document.getElementById('lb-next').addEventListener('click', function(){ step(1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) close(); });
+  document.addEventListener('keydown', function(e){
+    if (!lb.classList.contains('open')) return;
+    if (e.key === 'Escape') close();
+    else if (e.key === 'ArrowLeft') step(-1);
+    else if (e.key === 'ArrowRight') step(1);
+  });
+})();
+</script>
+</body>
+</html>
